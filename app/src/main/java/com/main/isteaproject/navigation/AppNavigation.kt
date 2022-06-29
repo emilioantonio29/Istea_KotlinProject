@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.main.isteaproject.screens.CardScreen
 import com.main.isteaproject.screens.DetailScreen
 import com.main.isteaproject.screens.MainScreen
 
@@ -24,6 +25,9 @@ fun AppNavigation(){
         )
         {
             DetailScreen(navController, it.arguments?.getString("text"), it.arguments?.getString("title"))
+        }
+        composable(route = AppScreens.CardScreen.route){
+            CardScreen(navController)
         }
     }
 }

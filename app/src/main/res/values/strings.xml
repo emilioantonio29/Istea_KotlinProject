@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IsteaProject</string>
+    <string name="first_title">First One</string>
+    <string name="first_description">Displays text and follows Material Design guidelines.</string>
 </resources>

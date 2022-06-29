@@ -171,7 +171,7 @@ fun MainBodyContent(navController: NavController){
                                 modifier = Modifier
                                     .fillMaxSize()
                                     .clickable {
-                                        navController.navigate(AppScreens.DetailScreen.route+"?text=imMAIN&title=title&img=TITLE") },
+                                        navController.navigate(AppScreens.DetailScreen.route+"?text=${it.data[index].descript}&title=${it.data[index].nombre}&img=${it.data[index].imagen}") },
                                 verticalArrangement = Arrangement.Center,
                                 horizontalAlignment = Alignment.CenterHorizontally
                             ) {

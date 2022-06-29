@@ -13,7 +13,7 @@ import androidx.navigation.NavController
 import com.main.isteaproject.navigation.AppScreens
 
 @Composable
-fun DetailScreen(navController: NavController, text: String?, title: String?){
+fun DetailScreen(navController: NavController, text: String?, title: String?, img: String?){
     Scaffold(topBar = {
         TopAppBar() {
             Icon(
@@ -25,12 +25,12 @@ fun DetailScreen(navController: NavController, text: String?, title: String?){
             Text(text = "Detail")
         }
     }) {
-        DetailBodyContent(navController, text, title)
+        DetailBodyContent(navController, text, title, img)
     }
 }
 
 @Composable
-fun DetailBodyContent(navController: NavController, texto: String?, title: String?){
+fun DetailBodyContent(navController: NavController, texto: String?, title: String?, img: String?){
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,

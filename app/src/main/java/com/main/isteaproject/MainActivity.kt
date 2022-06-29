@@ -8,6 +8,8 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.main.isteaproject.navigation.AppNavigation
+import com.main.isteaproject.screens.MainScreen
 import com.main.isteaproject.ui.theme.IsteaProjectTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,7 +19,7 @@ class MainActivity : ComponentActivity() {
             IsteaProjectTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                    AppNavigation()
                 }
             }
         }
@@ -33,6 +35,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     IsteaProjectTheme {
-        Greeting("Android")
+        AppNavigation()
     }
 }
